@@ -1,87 +1,112 @@
-body{
-    background-color: lightpink;
-}
-table{
-    border: 5px solid red;
-    padding: 1%;
-    margin: 15px;
-    padding-left: 20px;
-    width: 200px;
-    height: 100px;  
-}
-#points{
-    font-style: oblique;
-    font-weight: 900;
-    font-size: large;   
-    font-family: Arial, Helvetica, sans-serif;
-}
-.planets{
-    text-align: center;
-}
-h2{
-    text-transform: uppercase;
-    text-decoration: underline;
-    text-shadow: 1px 1px red;
-    font-style: italic;
-}
-main div{
-    text-indent: 90px;
-    line-height: 30px;
-}   
-img{
-    border-radius: 50%;
-    width: 200px;
-    padding: 0%;
-    border: 10px solid white;
-}
-@keyframes heading {
-    from {color: white;}
-    to {color: black;}
-  }
-  
-h1{
-    color: black;
-    animation-name: heading;
-    animation-duration: 10s; 
-}
-a{
-    color: red;
-    background-color: lightpink;
-}
-a:hover{
-    color: white;
-    background-color: lightpink;
-}
-.background{
-    background-image: url(stars.jpg);
-}
-ol > li {
-    font-size: 15px;
-}
-.planets a {
-    font-size: 23px;
-}
-.box{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;  
-    padding: 20px;
-}.item1{
-    font-size: larger;
-    text-align: center;
-}
-@media (min-width: 768px) {
-    .box {
-        display: grid; 
-        grid-template-columns: repeat(2, 1fr);
+    body{
+        background-color: lightpink;
+    }
+    .table1{
+        border: 5px solid red;
+        padding: 1%;
+        margin: 15px;
+        padding-left: 20px;
+        width: 30%;  
+        min-width: 200px;
+        font-size: larger;
+        text-align: center;
+    }
+    .table2{
+        border: 5px solid red;
+        padding: 1%;
+        margin: 15px;
+        padding-left: 20px;
+        width: 40%;  
+        min-width: 400px;
+        font-size: larger;
+        text-align: center;
+    }
+    .tables{
+        display: flex   ;
+        flex-flow: row nowrap;
+        justify-content: center;    
+        align-items: center;
         gap: 20px;
+        width: 100%;    
+    }
+    @media screen and (max-width: 1034px) {
+        .tables{
+            flex-direction: column;
+        }
+    }    
+    #points{
+        font-style: oblique;
+        font-weight: 900;
+        font-size: large;   
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .planets{
+        text-align: center;
+    }
+    h2{
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-shadow: 1px 1px red;
+        font-style: italic;
+    }
+    main div{
+        text-indent: 90px;
+        line-height: 30px;
+    }   
+    img{
+        border-radius: 50%;
+        width: 200px;
+        padding: 0%;
+        border: 10px solid white;
+    }
+    @keyframes heading {
+        from {color: white;}
+        to {color: black;}
+    }
+    
+    h1{
+        color: black;
+        animation-name: heading;
+        animation-duration: 10s; 
+    }
+    a{
+        color: red;
+        background-color: lightpink;
+    }
+    a:hover{
+        color: white;
+        background-color: lightpink;
+    }
+    .background{
+        background-image: url(stars.jpg);
+    }
+    ol > li {
+        font-size: 15px;
+    }
+    .planets a {
+        font-size: 23px;
+    }
+    .box{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;  
         padding: 20px;
+    }.item1{
+        font-size: larger;
+        text-align: center;
     }
-}
-@media (min-width: 1024px) {
-    .box {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
-        padding: 30px;
+    @media (min-width: 768px) {
+        .box {
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
     }
-}
+    @media (min-width: 1024px) {
+        .box {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            padding: 30px;
+        }
+    }
