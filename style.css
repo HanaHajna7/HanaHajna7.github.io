@@ -29,6 +29,10 @@
         gap: 20px;
         width: 100%;    
     }
+    .table1 td, .table2 td {
+        padding: 5px 10px; 
+        border-bottom: 1px solid #ff4d4d;
+    }
     @media screen and (max-width: 1034px) {
         .tables{
             flex-direction: column;
