@@ -151,7 +151,7 @@ function score(){
         } else if (score2 > score1) {
             score.innerHTML = `<p>Player 2 wins!</p>`;
         } else {
-            score.innerHTML = `<p>It's a tie!</p>`;
+            score.innerHTML = `<p>It's a tie!!!</p>`;
         }
     } else {
         score.innerHTML += `<p>Player ${player} is on the move.</p>`;
